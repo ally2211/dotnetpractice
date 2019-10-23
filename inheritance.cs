@@ -32,8 +32,8 @@ public class Program
     public static void Main(string[] args)
     {
         C c = new C();
-        c.Name = "Allyson usa";
-        c.Location = "United States";
+        c.Name = "Allyson";
+        c.Location = "United States of America";
         c.Age = 32;
         c.GetName();
         c.GetLocation();
