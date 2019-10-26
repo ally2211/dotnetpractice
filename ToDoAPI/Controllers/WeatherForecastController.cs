@@ -29,9 +29,10 @@ namespace ToDoAPI.Controllers
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
+                idDesc = index,
                 DateAndTime = DateTime.Now.AddDays(index),
                 TemperatureInCelsius = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Description = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
         }
